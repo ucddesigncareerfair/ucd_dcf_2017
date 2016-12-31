@@ -1,0 +1,118 @@
+/*=================
+	CALENDAR
+=================*/
+
+.main-header#main-header-calendar {
+	background-color: var(--dcf-red);
+}
+
+.main-section#calendar {
+	font-size: 1rem;
+	padding: 3em 1em;
+}
+
+.calendar-entry {
+	font-size: 1.5em;
+	border-bottom: 0.2em solid hsla(var(--dcf-red-hsl), 0.2);
+	border-radius: 0.2em;
+	padding-top: 0.5em;
+}
+
+.calendar-list {
+	list-style: none;
+	margin-left: 2em;
+}
+
+.calendar-toggle {
+	display: none;
+}
+
+.calendar-toggle + label {
+	cursor: pointer;
+	display: block;
+	line-height: 2em;
+}
+
+.calendar-entry-details {
+	display: none;
+	visibility: hidden;
+	justify-content: space-between;
+	align-items: baseline;
+	background-color: hsla(var(--dcf-yellow-hsl), 0.1);
+	padding: 1em;
+	border-radius: 0.2em;
+	border-bottom: 0.4em solid hsla(var(--dcf-red-hsl), 0.4);
+	text-align: left;
+}
+
+.calendar-toggle:checked + label + .calendar-entry-details {
+	display: flex;
+	visibility: visible;
+}
+
+.calendar-toggle-icon {
+	display: block;
+	position: absolute;
+	width: 1em;
+	margin-left: -1.5em;
+	margin-top: 1em;
+}
+
+.calendar-toggle-icon path {
+	fill:none;
+	stroke: currentColor;
+	stroke-width: 0.2em;
+}
+
+.calendar-entry {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.calendar-entry-summary {
+	border-radius: 0.2em;
+	border-right: 0.2em solid hsla(var(--dcf-yellow-hsl),0.4);
+	margin-right: 2em;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+}
+
+.calendar-entry-summary p {
+	text-indent: 1em;
+}
+
+.calendar-entry-actions {
+	text-align: right;
+	list-style: none;
+	line-height: 1.75em;
+}
+
+.calendar-entry-actions a {
+	color: var(--dcf-blue);
+	width: 100%;
+	white-space: nowrap;
+}
+
+@media (max-width: 50rem){ 
+
+	.calendar-entry time {
+		margin-right: 2em;
+	}
+	
+	.calendar-entry-details {
+		flex-wrap: wrap;
+	}
+	
+	.calendar-entry-summary {
+		border-right: none;
+		margin-right: initial;
+		padding-right: initial;
+		border-bottom: 0.2rem solid hsla(var(--dcf-yellow-hsl),0.4);
+	}
+	
+	.calendar-entry-actions {
+		text-align: left;
+	}
+
+}
