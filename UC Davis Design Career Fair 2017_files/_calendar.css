@@ -94,23 +94,23 @@
 	white-space: nowrap;
 }
 
-@media (max-width: 50rem){ 
+@media (max-width: 50rem){
 
 	.calendar-entry time {
 		margin-right: 2em;
 	}
-	
+
 	.calendar-entry-details {
 		flex-wrap: wrap;
 	}
-	
+
 	.calendar-entry-summary {
 		border-right: none;
 		margin-right: initial;
 		padding-right: initial;
 		border-bottom: 0.2rem solid hsla(var(--dcf-yellow-hsl),0.4);
 	}
-	
+
 	.calendar-entry-actions {
 		text-align: left;
 	}
