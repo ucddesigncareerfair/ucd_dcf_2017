@@ -177,7 +177,7 @@ footer {
 }
 
 .dropdown-icon::after {
-	content: url(../img/tri.svg);
+	content: url(/img/tri.svg);
 	position: absolute;
 	height: 0.5em;
 	width: 0.5em;
@@ -420,6 +420,17 @@ footer {
 	min-height: 2em;
 	text-align: center;
 	line-height: 2em;
+}
+
+.to-the-top a {
+	all: initial;
+	text-decoration: none;
+}
+
+.to-the-top a::before {
+	all: initial;
+	text-decoration: none;
+	content: "^";
 }
 
 .site-footer {
