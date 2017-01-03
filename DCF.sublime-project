@@ -1,0 +1,29 @@
+{
+	"folders":
+	[
+		{
+			"path": "css"
+		},
+		{
+			"path": "img"
+		},
+		{
+			"path": "about"
+		},
+		{
+			"path": "students"
+		},
+		{
+			"path": "employers"
+		},
+		{
+			"path": "calendar"
+		},
+		{
+			"path": "index.html"
+		},
+		{
+			"path": "."
+		},
+	]
+}
