@@ -18,6 +18,12 @@
 
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 
+<style type="text/css">
+	.main-header, .site-footer {
+		background-color: var(--dcf-red);
+	}
+</style>
+
 <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role-->
 <script type="text/javascript">
 	function handleBtnClick(event) {
@@ -37,7 +43,7 @@
 </head>
 
 <svg style="display: none;">
-	<symbol id="shape-logo" viewBox="0 0 658.235 230.85" preserveAspectRatio="xMidYMid meet" >
+	<symbol id="shape-logo" viewBox="0 0 658.235 230.85" preserveAspectRatio="xMidYMid meet" role="img" aria-label="DCF Logo">
 		<title>DCF Logo</title>
 		<polygon fill="currentColor" points="305.148,0 247.488,47.841 271.344,230.07 434.153,230.07 	"/>
 		<polygon fill="currentColor" opacity="0.8" points="311.427,0 375.93,115.036 440.226,1.53 	"/>
@@ -63,7 +69,7 @@
 <body>
 <header class="site-header" role="banner">
 	<div class="header-wrapper">
-		<a href="/" class="header-logo-link">
+		<a href="/" class="header-logo-link" role="img" aria-label="Design Career Fair at UC Davis logo, linking to the home page.">
 			<svg class="logo noselect" id="logo" x="0%" y="0%" viewBox="0 0 1900 230" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<title>Design Career Fair at UC Davis</title>
 				<g id="logo-dcf">
