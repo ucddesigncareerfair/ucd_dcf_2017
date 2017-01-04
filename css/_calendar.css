@@ -17,12 +17,13 @@
 
 .calendar-event::before {
 	content: "";
-	width: 0;
-	height: 0;
-	margin-top: 1.2em;
-	margin-left: -0.8em;
+	background: url(/img/chevron.svg), no-repeat;
+	transform: rotate(-90deg);
+	width: 1em;
+	height: 0.5625em;
+	margin-top: 1.28em;
+	margin-left: -1.5em;
 	position: absolute;
-	border: 0.2rem solid currentColor;
 	display: block;
 }
 
@@ -63,6 +64,12 @@
 .calendar-entry[role="button"][aria-pressed="true"] + .calendar-entry-details {
 	display: flex;
 	visibility: visible;
+}
+
+.calendar-toggle:checked .calendar-event::before,
+.calendar-entry[role="button"][aria-pressed="true"] .calendar-event::before {
+	transform: rotate(0deg);
+	background-color: red;
 }
 
 .calendar-toggle-icon {

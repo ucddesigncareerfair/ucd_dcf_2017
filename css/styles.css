@@ -24,7 +24,7 @@ html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: inherit;
@@ -34,6 +34,7 @@ body {
 	font-size: 1rem;
 	color: hsl(0, 0%, 20%);
 	background-color: hsl(0, 0%, 100%);
+	min-height: 100vh: 
 }
 
 @font-face {
