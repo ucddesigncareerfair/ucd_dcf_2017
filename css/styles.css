@@ -24,7 +24,7 @@ html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: inherit;
@@ -34,18 +34,26 @@ body {
 	font-size: 1rem;
 	color: hsl(0, 0%, 20%);
 	background-color: hsl(0, 0%, 100%);
+	min-height: 100vh: 
+}
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Condensed"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
 .body-font,
 body, 
 menu h2 {
-	font-family: "Ubuntu Condensed", "Calibri", "Roboto", "Helvetica Neue", sans-serif;
+	font-family: "Ubuntu Condensed", "system", sans-serif;
 }
 
 .header-font,
 h1, h2, h3, h4, h5, h6, 
 #logo-text, .header-nav-item, nav a {
-	font-family: "Ubuntu", "Calibri", "Roboto", "Helvetica Neue", sans-serif;
+	font-family: "Ubuntu", "system", sans-serif;
 }
 
 main {
@@ -136,10 +144,6 @@ h2 {
 	background-color: hsl(0, 0%, 95%);
 }
 
-footer { 
-	background-color: var(--dcf-red);
-}
-
 .menu-nav-list::before { 
 	background-image: linear-gradient(hsla(0, 0%, 90%, 0), hsla(0, 0%, 90%, 1));
 }
@@ -194,6 +198,10 @@ footer {
 	border-bottom: initial;
 	margin: 0;
 	padding: 1em 0;
+}
+
+a.header-logo-link {
+	line-height: initial;
 }
 
 .site-header a::before {
@@ -334,6 +342,7 @@ footer {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	list-style: none;
+	box-shadow: -0.5em 0 3em rgba(0, 0, 0, 0.2);
 }
 
 .menu-nav-list::before { 
@@ -437,6 +446,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-flow: wrap;
+	background-color: #000;
 	width: 100%;
 	min-height: 2em;
 	padding: 1em;
