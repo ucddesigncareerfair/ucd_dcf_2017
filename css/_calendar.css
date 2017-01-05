@@ -11,26 +11,41 @@
 	padding: 3em 1em;
 }
 
+.calendar-event {
+	margin-left: 1em;
+}
+
+.calendar-event::before {
+	content: "";
+	background: url(/img/chevron.svg), no-repeat;
+	transform: rotate(-90deg);
+	width: 1em;
+	height: 0.5625em;
+	margin-top: 1.28em;
+	margin-left: -1.5em;
+	position: absolute;
+	display: block;
+}
+
 .calendar-entry {
-	font-size: 1.5em;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+	cursor: pointer;
+	min-height: 3rem;
 	border-bottom: 0.2em solid hsla(var(--dcf-red-hsl), 0.2);
 	border-radius: 0.2em;
 	padding-top: 0.5em;
 }
 
-.calendar-list {
-	list-style: none;
-	margin-left: 2em;
+.calendar-entry > * {
+	font-size: 1.5rem;
+	font-weight: normal;
+	display: inline-block;
 }
 
 .calendar-toggle {
 	display: none;
-}
-
-.calendar-toggle + label {
-	cursor: pointer;
-	display: block;
-	line-height: 2em;
 }
 
 .calendar-entry-details {
@@ -45,9 +60,16 @@
 	text-align: left;
 }
 
-.calendar-toggle:checked + label + .calendar-entry-details {
+.calendar-toggle:checked + label + .calendar-entry-details,
+.calendar-entry[role="button"][aria-pressed="true"] + .calendar-entry-details {
 	display: flex;
 	visibility: visible;
+}
+
+.calendar-toggle:checked .calendar-event::before,
+.calendar-entry[role="button"][aria-pressed="true"] .calendar-event::before {
+	transform: rotate(0deg);
+	background-color: red;
 }
 
 .calendar-toggle-icon {
@@ -62,12 +84,6 @@
 	fill:none;
 	stroke: currentColor;
 	stroke-width: 0.2em;
-}
-
-.calendar-entry {
-	display: flex;
-	justify-content: space-between;
-	flex-flow: row wrap;
 }
 
 .calendar-entry-summary {
@@ -94,23 +110,32 @@
 	white-space: nowrap;
 }
 
-@media (max-width: 50rem){
+@media (max-width: 50rem){ 
 
 	.calendar-entry time {
 		margin-right: 2em;
 	}
 
+	.calendar-entry {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.calendar-entry > * {
+		padding: 0.5rem 0;
+	}
+	
 	.calendar-entry-details {
 		flex-wrap: wrap;
 	}
-
+	
 	.calendar-entry-summary {
 		border-right: none;
 		margin-right: initial;
 		padding-right: initial;
 		border-bottom: 0.2rem solid hsla(var(--dcf-yellow-hsl),0.4);
 	}
-
+	
 	.calendar-entry-actions {
 		text-align: left;
 	}
