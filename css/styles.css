@@ -31,11 +31,26 @@ html {
 }
 
 body {
-	font-size: 1rem;
-	color: hsl(0, 0%, 20%);
 	background-color: hsl(0, 0%, 100%);
 	min-height: 100vh: 
 }
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.clickthrough {
+	pointer-events: none;
+}
+
+/*=================
+	TYPOGRAPHY
+=================*/
 
 @font-face {
   font-family: system;
@@ -56,8 +71,9 @@ h1, h2, h3, h4, h5, h6,
 	font-family: "Ubuntu", "system", sans-serif;
 }
 
-main {
-	min-height: calc(100vh - 10em); /* header 4 + footer 4; for positioning footer at bottom of page */
+body {
+	font-size: 1rem;
+	color: hsl(0, 0%, 20%);
 }
 
 p {
@@ -65,7 +81,7 @@ p {
 	line-height: 1.3em;
 }
 
-/* CSS calc lock for line-height http://codepen.io/timbrown/pen/akXvRw */
+/* CSS calc lock for responsive line-height http://codepen.io/timbrown/pen/akXvRw */
 @media (min-width: 24.15em) { /* 21em "gate" * 1.15 font-size */
 	p {
 		line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
@@ -78,6 +94,19 @@ p {
 	}
 }
 
+.article-columns {
+	-webkit-column-width: 55ch;
+	-moz-column-width: 55ch;
+	column-width: 55ch;
+}
+
+.article-block {
+	max-width: 55ch;
+}
+
+.article-columns p, .article-block p {
+	text-indent: 2em;
+}
 a {
 	color: currentColor;
 	text-decoration: none;
@@ -110,29 +139,13 @@ a:active::before {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 3rem;
+	line-height: 1.05em;
 }
 
 h2 {
-	font-size: 2em;
-}
-
-.noselect {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.clickthrough {
-	pointer-events: none;
-}
-
-.header-wrapper, .main-header-wrapper {
-	max-width: 60rem;
-	margin: 0 auto;
+	font-size: 2rem;
+	line-height: 1.05em;
 }
 
 /*=================
@@ -163,6 +176,7 @@ h2 {
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 1em;
+	max-width: 60rem;
 }
 
 #logo {
@@ -465,6 +479,10 @@ a.header-logo-link {
 	MAIN
 =================*/
 
+main {
+	min-height: calc(100vh - 10em); /* header 4 + footer 6; for positioning footer at bottom of page */
+}
+
 .main-header {
 	width: 100%;
 	padding: 1em 0;
@@ -473,6 +491,7 @@ a.header-logo-link {
 }
 
 .main-header-wrapper {
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
