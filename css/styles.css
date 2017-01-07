@@ -62,7 +62,7 @@ body {
 .body-font,
 body, 
 menu h2 {
-	font-family: "Ubuntu Condensed", "system", sans-serif;
+	font-family: 'Nunito', "Ubuntu Condensed", "system", sans-serif;
 }
 
 .header-font,
@@ -95,18 +95,20 @@ p {
 }
 
 .article-columns {
-	-webkit-column-width: 55ch;
-	-moz-column-width: 55ch;
-	column-width: 55ch;
+	-webkit-column-width: 40ch;
+	-moz-column-width: 40ch;
+	column-width: 40ch;
 }
 
 .article-block {
-	max-width: 55ch;
+	max-width: 66ch;
+	margin: 0 auto;
 }
 
 .article-columns p, .article-block p {
 	text-indent: 2em;
 }
+
 a {
 	color: currentColor;
 	text-decoration: none;
