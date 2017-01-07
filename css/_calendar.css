@@ -94,10 +94,6 @@
 	padding-right: 0.5em;
 }
 
-.calendar-entry-summary p {
-	text-indent: 2em;
-}
-
 .calendar-entry-actions {
 	text-align: right;
 	list-style: none;
