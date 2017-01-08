@@ -122,7 +122,7 @@ a {
 	color: currentColor;
 	text-decoration: none;
 	border-bottom: 0.1em solid var(--dcf-blue);
-	border-radius: 0.1em;
+	border-radius: 0.2em 0.2em 0 0;
 	padding: 0.1em 0.2em 0;
 	margin: -0.1em -0.2em 0;
 	transition: background-color 0.2s;
