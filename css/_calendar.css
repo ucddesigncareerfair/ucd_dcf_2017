@@ -37,6 +37,7 @@
 	padding-top: 0.5em;
 	border-radius: 0.2em;
 	border-bottom: 0.2em solid hsla(var(--dcf-red-hsl), 0.1);
+	transition: border 0.2s;
 }
 
 .calendar-entry-wrapper:hover {
