@@ -127,7 +127,7 @@
 		margin-right: 2em;
 	}
 
-	.calendar-entry {
+	.calendar-entry-wrapper {
 		flex-direction: column;
 		justify-content: center;
 	}
