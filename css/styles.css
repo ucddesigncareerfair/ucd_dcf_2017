@@ -122,7 +122,7 @@ a {
 	color: currentColor;
 	text-decoration: none;
 	border-bottom: 0.1em solid var(--dcf-blue);
-	border-radius: 0.1em;
+	border-radius: 0.2em 0.2em 0 0;
 	padding: 0.1em 0.2em 0;
 	margin: -0.1em -0.2em 0;
 	transition: background-color 0.2s;
@@ -235,11 +235,15 @@ a.header-logo-link {
 
 .header-nav-list > li {
 	display: inline-block;
-	padding-left: 1.25em;
+	cursor: pointer;
 }
 
-#header-calendar-link + li { /*remove extra padding after calendar due to no dropdown icon */
-	padding-left: 0.75em;
+.header-nav-list > li:not(:last-child) {
+	padding-right: 1.25em;
+}
+
+#header-calendar-link { /*remove extra padding after calendar due to no dropdown icon */
+	padding-right: 0.75em;
 }
 
 .header-nav-list .dropdown-list {
@@ -363,7 +367,7 @@ a.header-logo-link {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	list-style: none;
-	box-shadow: -0.5em 0 3em rgba(0, 0, 0, 0.2);
+	/*box-shadow: -0.5em 0 3em rgba(0, 0, 0, 0.2);*/
 }
 
 .menu-nav-list::before { 
