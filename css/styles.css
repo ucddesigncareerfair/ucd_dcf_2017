@@ -119,9 +119,10 @@ p {
 }
 
 a {
-	color: var(--dcf-blue);
+	color: currentColor;
 	text-decoration: none;
-	border-bottom: 0.1em solid;
+	border-bottom: 0.1em solid var(--dcf-blue);
+	border-radius: 0.1em;
 	padding: 0.1em 0.2em 0;
 	margin: -0.1em -0.2em 0;
 	transition: background-color 0.2s;
@@ -223,8 +224,8 @@ a.header-logo-link {
 	line-height: initial;
 }
 
-.site-header a::before {
-	all: initial;
+.site-header a:hover {
+	background-color: initial;
 }
 
 .site-header nav {

@@ -174,11 +174,13 @@
 		</div>
 	</header>
 	<section class="main-section calendar-list" id="calendar" aria-labelledby="main-header-calendar">
-		<article class="calendar-event" role="article">
+		<section class="calendar-event" role="article">
 			<input class="calendar-toggle" id="event-2017-AND" type="checkbox">
-			<label for="event-2017-AND" class="calendar-entry" role="button" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)" tabindex="0">
-				<time datetime="2017-02-25T10:00" class="calendar-entry-date header-font">Saturday, February 25 at 10-2pm</time>
-				<h2 class="calendar-entry-name">Alumni Networking Day</h2>
+			<label for="event-2017-AND" class="calendar-entry" role="button" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)" tabindex="0" title="Press to read more">
+				<hgroup class="calendar-entry-wrapper">
+					<time datetime="2017-02-25T10:00" class="calendar-entry-date header-font"><h2>Saturday, February 25 at 10-2pm</h2></time>
+					<h2 class="calendar-entry-name">Alumni Networking Day</h2>
+				</hgroup>
 			</label>
 			<section class="calendar-entry-details">
 				<article class="calendar-entry-summary body-type">
@@ -195,12 +197,14 @@
 					<li><a href="https://goo.gl/forms/coHCFDGeaob0QFpV2">Be a POP UP Shop Vendor</a></li>
 				</ul>
 			</section>
-		</article>
+		</section>
 		<article class="calendar-event" role="article">
 			<input class="calendar-toggle" id="event-2017-DCF" type="checkbox">
-			<label for="event-2017-DCF" class="calendar-entry" role="button" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)" tabindex="0">
-				<time datetime="2017-04-28T11:00" class="calendar-entry-date header-font">Friday, April 28 at 11-2pm</time>
-				<h2 class="calendar-entry-name">Design Career Fair</h2>
+			<label for="event-2017-DCF" class="calendar-entry" role="button" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)" tabindex="0" title="Press to read more">
+				<hgroup class="calendar-entry-wrapper">
+					<time datetime="2017-04-28T11:00" class="calendar-entry-date header-font"><h2>Friday, April 28 at 11-2pm</h2></time>
+					<h2 class="calendar-entry-name">Design Career Fair</h2>
+				</hgroup>
 			</label>
 			<section class="calendar-entry-details">
 				<article class="calendar-entry-summary">
@@ -215,7 +219,7 @@
 			</section>
 		</article>
 	</section>
-	<section class="main-section">
+	<!-- <section class="main-section">
 		<article class="article-block">
 			<h2>Body Text</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor lacus arcu. Aliquam congue libero et dolor faucibus, a mattis nibh porttitor. Phasellus suscipit leo felis. Mauris euismod purus et ante ultrices malesuada. Donec tincidunt congue nulla, sed sagittis nulla pharetra eu. Nam imperdiet, massa vestibulum volutpat scelerisque, ligula metus lobortis risus, et vestibulum felis velit euismod diam. Donec sagittis non magna eu rhoncus. Suspendisse efficitur arcu in nunc vestibulum, sed condimentum nulla aliquam. Vestibulum orci sem, efficitur nec nisl quis, interdum eleifend ante. </p>
@@ -225,7 +229,7 @@
 			<p>Vivamus lorem mi, interdum ut tempus ultricies, interdum eu massa. Proin vitae nisl aliquam, sodales eros et, varius risus. Cras id aliquam nisl. In vitae mattis nunc, vitae gravida magna. Vivamus feugiat vitae lacus a fringilla. Sed placerat vel nisl at aliquet. Curabitur elementum ut risus ut condimentum. Vivamus porttitor justo vel metus egestas rutrum. Aliquam pulvinar sapien nisl, sit amet accumsan ligula aliquet a. Nam quis sodales sapien, non pulvinar nulla. Nulla feugiat, enim vel luctus ultrices, ipsum justo dignissim lorem, sit amet venenatis est sapien hendrerit massa. Pellentesque scelerisque metus ac mollis semper. Sed commodo, neque quis aliquam auctor, ex justo pharetra purus, ullamcorper iaculis mauris dui sit amet felis. Nam luctus ipsum elementum nulla molestie tincidunt. Nam sed semper ligula. Nunc eu ullamcorper risus, luctus dignissim sapien. </p>
 			<p>Nulla facilisi. Vivamus eu convallis mauris. Praesent semper tellus hendrerit est accumsan suscipit. Nulla non orci at mauris fermentum consequat quis nec ligula. Aenean in justo est. Phasellus a fringilla orci. Cras ac ex est. </p>
 		</article>
-	</section>
+	</section> -->
 </main>
 
 <section class="to-the-top">

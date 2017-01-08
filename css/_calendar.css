@@ -15,7 +15,7 @@
 	margin-left: 1em;
 }
 
-.calendar-event::before {
+.calendar-entry::before {
 	content: "";
 	background: url(/img/chevron.svg), no-repeat;
 	transform: rotate(-90deg);
@@ -25,20 +25,25 @@
 	margin-left: -1.5em;
 	position: absolute;
 	display: block;
+	transition: transform 0.2s;
 }
 
-.calendar-entry {
+.calendar-entry-wrapper {
 	display: flex;
 	justify-content: space-between;
 	flex-flow: wrap;
 	cursor: pointer;
 	min-height: 3rem;
-	border-bottom: 0.2em solid hsla(var(--dcf-red-hsl), 0.2);
-	border-radius: 0.2em;
 	padding-top: 0.5em;
+	border-radius: 0.2em;
+	border-bottom: 0.2em solid hsla(var(--dcf-red-hsl), 0.1);
 }
 
-.calendar-entry > * {
+.calendar-entry-wrapper:hover {
+	border-bottom: 0.2em solid hsla(var(--dcf-red-hsl), 0.3);
+}
+
+.calendar-entry h2 {
 	font-size: 1.5rem;
 	font-weight: normal;
 	display: inline-block;
@@ -49,7 +54,8 @@
 }
 
 .calendar-entry-details {
-	display: none;
+	display: flex;
+	position: absolute;
 	visibility: hidden;
 	justify-content: space-between;
 	align-items: baseline;
@@ -58,18 +64,20 @@
 	border-radius: 0.2em;
 	border-bottom: 0.4em solid hsla(var(--dcf-red-hsl), 0.4);
 	text-align: left;
+	opacity: 0;
+	transition: opacity 0.2s;
 }
 
-.calendar-toggle:checked + label + .calendar-entry-details,
+.calendar-toggle:checked + .calendar-entry + .calendar-entry-details,
 .calendar-entry[role="button"][aria-pressed="true"] + .calendar-entry-details {
-	display: flex;
+	position: initial;
 	visibility: visible;
+	opacity: initial;
 }
 
-.calendar-toggle:checked .calendar-event::before,
-.calendar-entry[role="button"][aria-pressed="true"] .calendar-event::before {
+.calendar-toggle:checked + .calendar-entry::before,
+.calendar-entry[role="button"][aria-pressed="true"]::before {
 	transform: rotate(0deg);
-	background-color: red;
 }
 
 .calendar-toggle-icon {
@@ -88,7 +96,7 @@
 
 .calendar-entry-summary {
 	border-radius: 0.2em;
-	border-right: 0.2em solid hsla(var(--dcf-yellow-hsl),0.4);
+	/*border-right: 0.2em solid hsla(var(--dcf-yellow-hsl),0.3);*/
 	margin-right: 2em;
 	padding-bottom: 0.5em;
 	padding-right: 0.5em;
@@ -101,9 +109,15 @@
 }
 
 .calendar-entry-actions a {
-	color: var(--dcf-blue);
+	/*color: var(--dcf-blue);*/
 	width: 100%;
 	white-space: nowrap;
+}
+
+.calendar-entry-actions hr {
+	color: hsla(var(--dcf-yellow-hsl),0.3);
+	height: 0.2em;
+	border-radius: 0.2rem;
 }
 
 @media (max-width: 50rem){ 
