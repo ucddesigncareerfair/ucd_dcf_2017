@@ -31,90 +31,8 @@ html {
 }
 
 body {
-	font-size: 1rem;
-	color: hsl(0, 0%, 20%);
 	background-color: hsl(0, 0%, 100%);
 	min-height: 100vh: 
-}
-
-@font-face {
-  font-family: system;
-  font-style: normal;
-  font-weight: 300;
-  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Condensed"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-}
-
-.body-font,
-body, 
-menu h2 {
-	font-family: "Ubuntu Condensed", "system", sans-serif;
-}
-
-.header-font,
-h1, h2, h3, h4, h5, h6, 
-#logo-text, .header-nav-item, nav a {
-	font-family: "Ubuntu", "system", sans-serif;
-}
-
-main {
-	min-height: calc(100vh - 10em); /* header 4 + footer 4; for positioning footer at bottom of page */
-}
-
-p {
-	font-size: 1.15em;
-	line-height: 1.3em;
-}
-
-/* CSS calc lock for line-height http://codepen.io/timbrown/pen/akXvRw */
-@media (min-width: 24.15em) { /* 21em "gate" * 1.15 font-size */
-	p {
-		line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
-	}
-}
-
-@media (min-width: 40.25em) { /* 35em "gate" * 1.15 font-size */
-	p {
-		line-height: 1.5em;
-	}
-}
-
-a {
-	color: currentColor;
-	text-decoration: none;
-	border-bottom: 0.1em solid;
-	padding: 0.1em 0.2em 0;
-	margin: 0 -0.1em;
-	position: relative;
-}
-
-a::before { 
-/* creates transparency-capable background for link hovers */
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: currentColor;
-	opacity: 0;
-	transition: opacity 0.2s;
-}
-
-a:hover::before {
-	opacity: 0.1;
-}
-
-a:active::before {
-	opacity: 0.3;
-	transition-duration: 0s;
-}
-
-h1 {
-	font-size: 3em;
-}
-
-h2 {
-	font-size: 2em;
 }
 
 .noselect {
@@ -130,9 +48,110 @@ h2 {
 	pointer-events: none;
 }
 
-.header-wrapper, .main-header-wrapper {
-	max-width: 60rem;
+.color {
+	color: currentColor;
+}
+
+.bg-color {
+	background-color: currentColor;
+}
+
+/*=================
+	TYPOGRAPHY
+=================*/
+
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Condensed"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+.body-font,
+body, 
+menu h2 {
+	font-family: "Nunito", "Ubuntu Condensed", "system", sans-serif;
+}
+
+.header-font,
+h1, h2, h3, h4, h5, h6, 
+#logo-text, .header-nav-item, nav a {
+	font-family: "Ubuntu", "system", sans-serif;
+}
+
+body {
+	font-size: 1rem;
+	color: hsl(0, 0%, 20%);
+}
+
+p, .body-type {
+	font-size: 1.15rem;
+	line-height: 1.3em;
+	text-indent: 0em;
+}
+
+p {
+	padding-bottom: 1.5em;
+}
+
+/* CSS calc lock for responsive line-height http://codepen.io/timbrown/pen/akXvRw */
+@media (min-width: 24.15em) { /* 21em "gate" * 1.15 font-size */
+	p, .body-type {
+		line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
+	}
+}
+
+@media (min-width: 40.25em) { /* 35em "gate" * 1.15 font-size */
+	p, .body-type {
+		line-height: 1.5em;
+	}
+}
+
+.article-columns {
+	-webkit-column-width: 40ch;
+	-moz-column-width: 40ch;
+	column-width: 40ch;
+}
+
+.article-block {
+	max-width: 66ch;
 	margin: 0 auto;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+	border-bottom: 0.1em solid var(--dcf-blue);
+	border-radius: 0.1em;
+	padding: 0.1em 0.2em 0;
+	margin: -0.1em -0.2em 0;
+	transition: background-color 0.2s;
+}
+
+a:hover {
+	background-color: hsla(var(--dcf-blue-hsl), 0.1);
+}
+
+a:active {
+	background-color: hsla(var(--dcf-blue-hsl), 0.3);
+	transition-duration: 0s;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 1.05em;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 1.05em;
+}
+
+hr {
+	margin: 1em 0;
+	background-color: currentColor;
+	border: 0;
+	height: 0.1em;
 }
 
 /*=================
@@ -151,7 +170,7 @@ h2 {
 .site-header {
 	width: 100%;
 	font-size: 1rem;
-	min-height: 4em;
+	min-height: 4rem;
 	overflow: hidden;
 	text-transform: uppercase;
 }
@@ -162,12 +181,13 @@ h2 {
 	flex-flow: row wrap;
 	align-items: center;
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 1rem;
+	max-width: 60rem;
 }
 
 #logo {
 	display: inline-block;
-	height: 2em;
+	height: 2rem;
 }
 
 #logo-text {
@@ -204,13 +224,13 @@ a.header-logo-link {
 	line-height: initial;
 }
 
-.site-header a::before {
-	all: initial;
+.site-header a:hover {
+	background-color: initial;
 }
 
 .site-header nav {
 	display: inline-block;
-	padding-right: 1em;
+	padding-right: 1rem;
 }
 
 .header-nav-list > li {
@@ -295,6 +315,7 @@ a.header-logo-link {
 }
 
 .menu a {
+	color: currentColor;
 	display: block;
 	padding: 1em;
 	border-radius: 0.2em;
@@ -431,15 +452,21 @@ a.header-logo-link {
 	line-height: 2em;
 }
 
-.to-the-top a {
+.to-the-top a, .site-footer a {
 	all: initial;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .to-the-top a::before {
 	all: initial;
 	text-decoration: none;
 	content: "^";
+	cursor: pointer;
+}
+
+.site-footer a::before {
+	all: initial;
 }
 
 .site-footer {
@@ -465,6 +492,10 @@ a.header-logo-link {
 	MAIN
 =================*/
 
+main {
+	min-height: calc(100vh - 10em); /* header 4 + footer 6; for positioning footer at bottom of page */
+}
+
 .main-header {
 	width: 100%;
 	padding: 1em 0;
@@ -473,6 +504,7 @@ a.header-logo-link {
 }
 
 .main-header-wrapper {
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
@@ -516,8 +548,7 @@ a.header-logo-link {
     blockquote:first-line,
     li:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
         box-shadow: none !important;
         text-shadow: none !important;
 		border: none !important;
