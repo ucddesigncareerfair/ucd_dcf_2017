@@ -1,0 +1,28 @@
+{
+  "name": "ucd_dcf_2017",
+  "version": "1.0.0",
+  "description": "DCF 2017 Site",
+  "dependencies": {
+    "time-grunt": "^1.4.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html-build": "^0.6.1",
+    "load-grunt-config": "^0.19.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucddesigncareerfair/ucd_dcf_2017.git"
+  },
+  "author": "DCC",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ucddesigncareerfair/ucd_dcf_2017/issues"
+  },
+  "homepage": "https://github.com/ucddesigncareerfair/ucd_dcf_2017#readme"
+}

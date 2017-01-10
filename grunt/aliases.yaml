@@ -1,0 +1,8 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+    - dev
+dev:
+  description: 'Development build'
+  tasks:
+    - 'concurrent:devFirst'

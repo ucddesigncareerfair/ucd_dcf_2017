@@ -2,25 +2,25 @@
 	"folders":
 	[
 		{
-			"path": "css"
+			"path": "_site/css"
 		},
 		{
-			"path": "img"
+			"path": "_site/img"
 		},
 		{
-			"path": "about"
+			"path": "_site/about"
 		},
 		{
-			"path": "students"
+			"path": "_site/students"
 		},
 		{
-			"path": "employers"
+			"path": "_site/employers"
 		},
 		{
-			"path": "calendar"
+			"path": "_site/calendar"
 		},
 		{
-			"path": "index.html"
+			"path": "_site/index.html"
 		},
 		{
 			"path": "."
