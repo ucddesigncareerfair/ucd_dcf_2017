@@ -2,28 +2,28 @@
 	"folders":
 	[
 		{
-			"path": "_site/css"
+			"path": "css"
 		},
 		{
-			"path": "_site/img"
+			"path": "img"
 		},
 		{
-			"path": "_site/about"
+			"path": "about"
 		},
 		{
-			"path": "_site/students"
+			"path": "students"
 		},
 		{
-			"path": "_site/employers"
+			"path": "employers"
 		},
 		{
-			"path": "_site/calendar"
+			"path": "calendar"
 		},
 		{
-			"path": "_site/index.html"
+			"path": "index.html"
 		},
 		{
-			"path": "."
+			"path": "src"
 		},
 	]
 }

@@ -1,7 +1,7 @@
 module.exports = {
 	dist: {
 		src: 'src/html/**/index.html',
-		dest: '_site/',
+		dest: './',
 			options: {
 				beautify: true,
 				relative: true,
