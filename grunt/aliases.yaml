@@ -5,4 +5,7 @@ default:
 dev:
   description: 'Development build'
   tasks:
-    - 'concurrent:devFirst'
+    - 'clean'
+    - 'myth'
+    - 'htmlbuild'
+    - 'cssmin'

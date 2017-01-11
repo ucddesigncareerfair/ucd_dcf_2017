@@ -1,5 +1,6 @@
 module.exports = {
 	devFirst: [
-        'htmlbuild'
+        'htmlbuild',
+		'css_variables'
     ],
 };
