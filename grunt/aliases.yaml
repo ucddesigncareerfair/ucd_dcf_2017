@@ -1,11 +1,26 @@
 default:
   description: 'Default (production) build'
   tasks:
-    - dev
-dev:
-  description: 'Development build'
+    - prod
+prod:
+  description: 'full build of all tasks'
   tasks:
     - 'clean'
-    - 'myth'
+    - html
+    - css
+    - img
+img:
+  description: 'copy and min images'
+  tasks:
+    - 'copy'
+    - 'imagemin'
+html:
+  description: 'build and min html'
+  tasks:
     - 'htmlbuild'
+    - 'htmlmin'
+css:
+  description: 'build and min css'
+  tasks:
+    - 'myth'
     - 'cssmin'

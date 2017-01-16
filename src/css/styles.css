@@ -77,6 +77,7 @@ menu h2 {
 h1, h2, h3, h4, h5, h6, 
 #logo-text, .header-nav-item, nav a {
 	font-family: "Ubuntu", "system", sans-serif;
+	font-weight: 700;
 }
 
 body {
@@ -215,7 +216,7 @@ hr {
 	font-size: 1em;
 	line-height: 2em;
 	cursor: pointer;
-	border-bottom: initial;
+	border-bottom: none;
 	margin: 0;
 	padding: 1em 0;
 }
@@ -225,7 +226,7 @@ a.header-logo-link {
 }
 
 .site-header a:hover {
-	background-color: initial;
+	background-color: none;
 }
 
 .site-header nav {
@@ -457,6 +458,7 @@ a.header-logo-link {
 }
 
 .to-the-top a, .site-footer a {
+	border-bottom: none;
 	all: initial;
 	text-decoration: none;
 	cursor: pointer;

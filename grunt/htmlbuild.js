@@ -1,16 +1,11 @@
 module.exports = {
 	dist: {
 		src: 'src/html/**/index.html',
-		dest: './',
+		dest: 'dist/',
 			options: {
 				beautify: true,
 				relative: true,
 				basePath: 'src/html/',
-				styles: {
-					css: [ 
-						'_site/css/*.css',
-					],
-				},
 				sections: {
 					layout: {
 							siteheader: 'src/layout/site-header.html',

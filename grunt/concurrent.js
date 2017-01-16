@@ -1,6 +1,6 @@
 module.exports = {
 	devFirst: [
+		'myth',
         'htmlbuild',
-		'css_variables'
     ],
 };

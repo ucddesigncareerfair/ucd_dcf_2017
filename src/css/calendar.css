@@ -72,15 +72,12 @@
 	border-radius: 0.2em;
 	border-bottom: 0.4em solid hsla(var(--dcf-red-hsl), 0.4);
 	text-align: left;
-	opacity: 0;
-	transition: opacity 0.2s;
 }
 
 .calendar-toggle:checked + .calendar-entry + .calendar-entry-details,
 .calendar-entry[role="button"][aria-pressed="true"] + .calendar-entry-details {
-	position: initial;
+	position: static;
 	visibility: visible;
-	opacity: initial;
 }
 
 .calendar-toggle:checked + .calendar-entry::before,
