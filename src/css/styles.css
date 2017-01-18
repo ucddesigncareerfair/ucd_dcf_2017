@@ -351,11 +351,14 @@ a.header-logo-link {
 }
 
 .menu-nav-list {
-	visibility: hidden;
+	/*visibility: hidden;*/
 	padding: 3em 3em 1em 1em;
 	position: fixed;
-	right: -15em;
+	right: 0;
 	top: 0;
+	transform: translateX(100%);
+	will-change: transform; /*bug- considers scroll bars in layout, leading to issues on desktop browser */
+	transition: transform 50ms linear;
 	border-radius: 0.2em;
 	border-left: 0.2em solid rgba(0, 0, 0, 0.2);
 	text-align: left;
@@ -368,16 +371,14 @@ a.header-logo-link {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	list-style: none;
-	/*box-shadow: -0.5em 0 3em rgba(0, 0, 0, 0.2);*/
 }
 
-.menu-nav-list::before { 
-/* scroll fade indicator */
-	visibility: hidden;
+.menu-nav-list::before { /* scroll fade indicator */
+	/*visibility: hidden;*/
 	content: '';
 	position: fixed;
 	bottom: 0;
-	right: -15em;
+	right: 0;
 	width: 15em;
 	height: 1.5em;
 	opacity: 1;
@@ -385,13 +386,10 @@ a.header-logo-link {
 	pointer-events: none;
 }
 
-.menu-nav-list::before, .menu-nav-list { 
-	transition: all 0.1s;
-}
-
 .menu-toggle:checked ~ .menu-nav-list, .menu-toggle:checked ~ .menu-nav-list::before {
 	visibility: visible;
-	right: 0;
+	transform: none;
+	transition: transform 100ms linear;
 }
 
 .menu-toggle:checked ~ .menu-button {
@@ -400,7 +398,7 @@ a.header-logo-link {
 
 .menu-button svg, .menu-button-close svg {
 	display: block;
-	position: absolute;
+	position: relative;
 	top: 0;
 	right: 0;
 	height: 3em;
