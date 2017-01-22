@@ -9,10 +9,6 @@
 	CALENDAR
 =================*/
 
-.main-header#main-header-calendar {
-	background-color: var(--dcf-red);
-}
-
 .main-section#calendar {
 	font-size: 1rem;
 	padding: 3em 1em;

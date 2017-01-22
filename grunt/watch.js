@@ -30,4 +30,12 @@ module.exports = {
             'script'
         ]
     },
+	layout: {
+        files: [
+            'src/layout/**/*'
+        ],
+        tasks: [
+            'html'
+        ]
+    },
 };
