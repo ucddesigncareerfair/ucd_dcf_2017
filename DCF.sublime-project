@@ -2,27 +2,6 @@
 	"folders":
 	[
 		{
-			"path": "dist/css"
-		},
-		{
-			"path": "dist/img"
-		},
-		{
-			"path": "dist/about"
-		},
-		{
-			"path": "dist/students"
-		},
-		{
-			"path": "dist/employers"
-		},
-		{
-			"path": "dist/calendar"
-		},
-		{
-			"path": "dist/index.html"
-		},
-		{
 			"path": "src"
 		},
 	]
