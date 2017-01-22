@@ -9,10 +9,11 @@ prod:
     - html
     - css
     - img
+    - script
 img:
   description: 'copy and min images'
   tasks:
-    - 'copy'
+    - 'copy:img'
     - 'imagemin'
 html:
   description: 'build and min html'
@@ -24,3 +25,12 @@ css:
   tasks:
     - 'myth'
     - 'cssmin'
+script:
+  description: 'copy scripts'
+  tasks:
+    - 'copy:script'
+serve:
+  description: 'build and min css'
+  tasks:
+    - connect
+    - watch

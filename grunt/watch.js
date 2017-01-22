@@ -10,7 +10,7 @@ module.exports = {
             'src/css/*.css'
         ],
         tasks: [
-            'myth'
+            'css'
         ]
     },
 	
@@ -19,7 +19,15 @@ module.exports = {
             'src/html/**/*.html'
         ],
         tasks: [
-            'htmlbuild'
+            'html'
+        ]
+    },
+	script: {
+        files: [
+            'src/scripts/**/*'
+        ],
+        tasks: [
+            'script'
         ]
     },
 };

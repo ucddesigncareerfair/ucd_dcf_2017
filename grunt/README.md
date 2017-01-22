@@ -2,7 +2,9 @@
 
 `grunt` - production build, clears "/dist" and regenerates all files
 
-`grunt watch` - rebuilds html or css source files after changes to them are saved
+`grunt serve` - Launches a local server on http://localhost:2017
+
+Then watches for changes to source files and rebuilds to "/dist". CSS changes should apply automatically in the browser. HTML and script changes should automatically reload the page.
 
 # Setup
 
