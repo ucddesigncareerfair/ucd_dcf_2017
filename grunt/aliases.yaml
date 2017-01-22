@@ -6,6 +6,7 @@ prod:
   description: 'full build of all tasks'
   tasks:
     - 'clean'
+    - 'copy:cname'
     - html
     - css
     - img
