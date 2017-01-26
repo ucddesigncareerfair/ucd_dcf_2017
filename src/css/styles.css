@@ -423,7 +423,7 @@ a.header-logo-link {
 .menu-nav-header{
 	font-size: 1.25em;
 	margin: 1.5em 0em .6em 0em;
-	font-weight: 900;
+	font-weight: 900; /* Buggy - Tara doesn't understand why font-weight does not seem to effect the dropdown menu the way it should*/
 	color: hsla(0,0%,0%,1);
 }
 
