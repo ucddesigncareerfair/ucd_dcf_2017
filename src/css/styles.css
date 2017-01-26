@@ -68,13 +68,13 @@ body {
 }
 
 .body-font,
-body, 
+body,
 menu h2 {
 	font-family: "Nunito", "Ubuntu Condensed", "system", sans-serif;
 }
 
 .header-font,
-h1, h2, h3, h4, h5, h6, 
+h1, h2, h3, h4, h5, h6,
 #logo-text, .header-nav-item, nav a {
 	font-family: "Ubuntu", "system", sans-serif;
 	font-weight: 700;
@@ -156,15 +156,15 @@ hr {
 }
 
 /*=================
-	NAVIGATION 
+	NAVIGATION
 =================*/
 
-.site-header, .dropdown-list, .menu-nav-list { 
+.site-header, .dropdown-list, .menu-nav-list {
 /* controls navigation theme color, can be dropped in to html <style> for per-page variations */
 	background-color: hsl(0, 0%, 95%);
 }
 
-.menu-nav-list::before { 
+.menu-nav-list::before {
 	background-image: linear-gradient(hsla(0, 0%, 90%, 0), hsla(0, 0%, 90%, 1));
 }
 
@@ -260,7 +260,7 @@ a.header-logo-link {
 	flex-wrap: wrap;
 }
 
-.header-nav-list > li:hover .dropdown-list, 
+.header-nav-list > li:hover .dropdown-list,
 .header-nav-list-item[role="button"][aria-pressed="true"] .dropdown-list {
 	display: flex;
 }
@@ -414,20 +414,25 @@ a.header-logo-link {
 
 .menu-nav-link {
 	font-size: 1em;
+	color: hsla(0, 0%, 0%, 0.5);
+}
+
+.menu-nav-link a{
+	padding: .75em 1em .75em 1em;
 }
 
 .menu-nav-header {
 	font-size: 1em;
-	color: hsla(0, 0%, 0%, 0.66);
+	margin-top: .75em;
 }
 
 .menu hr {
-	background-color: hsla(0, 0%, 0%, 0.66);
+	background-color: hsla(0, 0%, 0%, 0.5);
 	border: 0;
 	height: 0.1em;
 }
 
-@media (max-width: 50rem){ 
+@media (max-width: 50rem){
 	.site-header nav {
 		display: none;
 	}
@@ -436,9 +441,9 @@ a.header-logo-link {
 		display: block;
 	}
 }
-	
-@media (max-width: 30rem){ 
-	
+
+@media (max-width: 30rem){
+
 	#logo-text {
 		visibility: hidden;
 	}
@@ -526,7 +531,7 @@ main {
 	margin: 0 auto;
 }
 
-@media (max-width: 50rem){ 
+@media (max-width: 50rem){
 	.main-header-title {
 		font-size: 1.5em;
 	}
@@ -613,15 +618,15 @@ main {
     h3 {
         page-break-after: avoid;
     }
-	
+
 	/*
      * DCF
      */
-	
+
 	.menu, nav {
 		display: none !important;
 	}
-	
+
 	.calendar-entry-details {
 		display: flex !important;
 		visibility: visible !important;
