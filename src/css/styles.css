@@ -365,7 +365,7 @@ a.header-logo-link {
 	max-height: 100vh;
 	width: 15em;
 	max-width: 100vw;
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
