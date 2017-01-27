@@ -3,7 +3,7 @@ module.exports = {
 		src: 'src/html/**/index.html',
 		dest: 'dist/',
 			options: {
-				beautify: true,
+				beautify: false,
 				relative: true,
 				basePath: 'src/html/',
 				sections: {
