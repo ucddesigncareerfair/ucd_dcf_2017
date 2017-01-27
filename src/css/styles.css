@@ -356,7 +356,7 @@ a.header-logo-link {
 	right: 0;
 	top: 0;
 	transform: translateX(100%);
-	will-change: transform; /*bug- considers scroll bars in layout, leading to issues on desktop browser */
+	/*will-change: transform; /*bug- considers scroll bars in layout, leading to issues on desktop browser */
 	transition: transform 50ms linear;
 	border-radius: 0.2em;
 	border-left: 0.2em solid rgba(0, 0, 0, 0.2);
