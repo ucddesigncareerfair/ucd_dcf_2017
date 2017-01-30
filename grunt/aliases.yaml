@@ -26,6 +26,7 @@ css:
   tasks:
     - 'cssmin:cat'
     - 'myth'
+    - 'cssmin:min'
 script:
   description: 'copy scripts'
   tasks:
