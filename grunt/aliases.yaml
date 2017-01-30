@@ -32,11 +32,11 @@ script:
   tasks:
     - 'copy:script'
 serve:
-  description: 'build and min css'
+  description: 'deploy a local server on port 2017 and watch for file changes'
   tasks:
     - connect
     - watch
 publish:
-  description: 'build and min css'
+  description: 'push compiled site from master to gh-pages'
   tasks:
     - 'shell:publish'
