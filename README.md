@@ -13,6 +13,8 @@ Run in a terminal from the project root "ucd_dcf_2017/"
 
 Then watches for changes to source files and rebuilds to "/dist". CSS changes should apply automatically in the browser. HTML and script changes should automatically reload the page.
 
+`grunt publish` push compiled site from master to gh-pages
+
 # Setup
 
 Install node.js LTS. https://nodejs.org/en/

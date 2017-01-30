@@ -35,3 +35,7 @@ serve:
   tasks:
     - connect
     - watch
+publish:
+  description: 'build and min css'
+  tasks:
+    - 'shell:publish'
