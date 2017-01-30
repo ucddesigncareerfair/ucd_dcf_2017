@@ -12,7 +12,7 @@ module.exports = {
 							sitefooter: 'src/layout/site-footer.html',
 							sitesvg: 'src/layout/site-svg.html',
 							sitehead: 'src/layout/site-head.html',
-							ariabutton: 'src/layout/ariabutton.js',
+							inlineScripts: 'src/layout/inlineScripts.js',
 						}
 				},
 				data: {

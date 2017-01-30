@@ -1,3 +1,8 @@
+<script type="text/javascript">
+  var host = "yoursite.com";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
 <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role-->
 <script type="text/javascript">
 	function handleBtnClick(event) {
