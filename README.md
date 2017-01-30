@@ -13,7 +13,8 @@ Open the console to the project root and run `npm install` to download all of th
 
 # Commands
 
-Run in a terminal from the project root "ucd_dcf_2017/"
+Run in a terminal from the project root "ucd_dcf_2017/".
+To open a terminal from github desktop, right click the project repository in the left pane of the program and select "open in git shell".
 
 `grunt` - Production build, clears "/dist" and regenerates all files
 
