@@ -24,8 +24,8 @@ html:
 css:
   description: 'build and min css'
   tasks:
+    - 'cssmin:cat'
     - 'myth'
-    - 'cssmin'
 script:
   description: 'copy scripts'
   tasks:

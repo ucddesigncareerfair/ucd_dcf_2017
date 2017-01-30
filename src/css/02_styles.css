@@ -69,8 +69,7 @@ body {
 }
 
 .body-font,
-body,
-menu h2 {
+body {
 	font-family: "Nunito", "Ubuntu Condensed", "system", sans-serif;
 }
 
@@ -219,6 +218,10 @@ hr {
 	border-bottom: none;
 	margin: 0;
 	padding: 1em 0;
+}
+
+.header-nav-item:hover, .site-header a:hover {
+	background-color: transparent;
 }
 
 a.header-logo-link {
