@@ -33,7 +33,7 @@
 	</header>
 	<section class="main-section calendar-list" id="calendar" aria-labelledby="main-header-calendar">
 		<section class="calendar-event" role="article">
-			<input class="calendar-toggle" id="event-2017-AND" type="checkbox">
+			<input class="calendar-toggle" id="event-2017-AND" type="checkbox" role="presentation">
 			<label for="event-2017-AND" class="calendar-entry" role="button" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)" tabindex="0" title="Press to read more">
 				<hgroup class="calendar-entry-wrapper">
 					<time datetime="2017-02-25T10:00" class="calendar-entry-date header-font"><h2>Saturday, February 25 at 10-2pm</h2></time>
@@ -45,7 +45,7 @@
 					<p>Design Careers Club is thrilled to host the 3rd Annual Alumni Networking Day on Saturday, February 25th at the Art Annex!  UCD alumni and students—from all grades and majors—are invited to enjoy a day of networking and festivities!</p>
 					<p>Check out <a href="http://arts.ucdavis.edu/photo-gallery/annual-alumni-networking-day-success">last year’s</a> Alumni Networking Day success.</p>
 				</article>
-				<ul class="calendar-entry-actions">
+				<ul class="calendar-entry-actions" role="complementary">
 					<li>Location: <a href="https://goo.gl/maps/W6kwgSSRFLS2">Art Annex</a></li>
 					<li><a href="https://3rducdand.eventbrite.com/">Eventbright RSVP</a></li>
 					<li><a href="#0">Add to Google Calendar</a></li>
@@ -56,8 +56,8 @@
 				</ul>
 			</section>
 		</section>
-		<article class="calendar-event" role="article">
-			<input class="calendar-toggle" id="event-2017-DCF" type="checkbox">
+		<section class="calendar-event" role="article">
+			<input class="calendar-toggle" id="event-2017-DCF" type="checkbox" role="presentation">
 			<label for="event-2017-DCF" class="calendar-entry" role="button" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)" tabindex="0" title="Press to read more">
 				<hgroup class="calendar-entry-wrapper">
 					<time datetime="2017-04-28T11:00" class="calendar-entry-date header-font"><h2>Friday, April 28 at 11-2pm</h2></time>
@@ -66,18 +66,17 @@
 			</label>
 			<section class="calendar-entry-details">
 				<article class="calendar-entry-summary">
+					<h3></h3>
 					<p>The 3rd Annual UC Davis Design Career Fair aims to empower students to take risks not only in designs, but also career aspirations. By providing students career resources we hope to bridge our talented designers to esteemed companies.</p>
 				</article>
-				<ul class="calendar-entry-actions">
+				<ul class="calendar-entry-actions" role="complementary">
 					<li>Location: ARC Ballroom</li>
 					<li><a href="#0">Eventbright RSVP</a></li>
 					<li><a href="#0">Add to Google Calendar</a></li>
 					<li><a href="#0">Facebook Event</a></li>
 				</ul>
 			</section>
-		</article>
-	</section>
-	<section class="main-section">
+		</section>
 	</section>
 </main>
 

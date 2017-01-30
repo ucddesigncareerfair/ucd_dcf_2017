@@ -33,6 +33,7 @@ body {
 	background-color: hsl(0, 0%, 100%);
 	min-height: 100vh;
 	color: hsl(0, 0%, 20%);
+	background-color: hsl(0,0%,100%);
 }
 
 .noselect {
@@ -349,6 +350,10 @@ a.header-logo-link {
 	display: block;
 }
 
+.menu ul {
+		list-style: none;
+}
+
 .menu-nav-list {
 	/*visibility: hidden;*/
 	padding: 3em 3em 1em 1em;
@@ -369,7 +374,6 @@ a.header-logo-link {
 	overflow-x: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	list-style: none;
 }
 
 .menu-nav-list::before { /* scroll fade indicator */
