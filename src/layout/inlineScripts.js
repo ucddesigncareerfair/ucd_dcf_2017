@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  var host = "yoursite.com";
+  var host = "ucddesigncareerfair.com";
   if ((host == window.location.host) && (window.location.protocol != "https:"))
     window.location.protocol = "https";
 </script>
