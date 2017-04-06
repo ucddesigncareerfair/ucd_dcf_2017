@@ -358,6 +358,27 @@ a.header-logo-link {
 	border-bottom: 0.4em solid #fff;
 }
 
+/*homepage buttons*/
+button {
+	padding: 2em 4em;
+	color: white;
+	margin: 4em 3em;
+	border: none;
+	border-radius: 20px;
+}
+
+.buttonCo {
+	background-color: #065398;
+}
+
+.buttonStu {
+	background-color: #ef6565;
+}
+
+.buttonVol {
+	background-color: #0cb9a3;
+}
+
 /*=================
 	MENU
 =================*/
