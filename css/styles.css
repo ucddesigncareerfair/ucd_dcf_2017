@@ -30,10 +30,17 @@ html {
 }
 
 body {
-	background-color: hsl(0, 0%, 100%);
 	min-height: 100vh;
 	color: hsl(0, 0%, 20%);
 	background-color: hsl(0,0%,100%);
+	background-image: url("../img/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+}
+
+#banner {
+	height: 34em;
 }
 
 .noselect {
@@ -85,7 +92,7 @@ body {
 }
 
 p, .body-type {
-	font-size: 1.15rem;
+	font-size: 1rem;
 	line-height: 1.3em;
 	text-indent: 0em;
 }
@@ -258,7 +265,7 @@ main {
 	cursor: pointer;
 	border-bottom: none;
 	margin: 0;
-	padding: 1em 0;
+	padding: 1em;
 }
 
 .header-nav-item:hover, .site-header a:hover {
