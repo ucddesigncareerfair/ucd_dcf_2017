@@ -33,15 +33,8 @@ body {
 	min-height: 100vh;
 	color: hsl(0, 0%, 20%);
 	background-color: hsl(0,0%,100%);
-	background-image: url("../img/banner.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: bottom;
 }
 
-#banner {
-	height: 34em;
-}
 
 .noselect {
 	-webkit-touch-callout: none;
@@ -105,7 +98,13 @@ p {
 @media (min-width: 24.15em) { /* 21em "gate" * 1.15 font-size */
 	p, .body-type {
 		line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em) / (35 - 21)));
+		padding: 1em;
 	}
+
+	h2 {
+		padding-left: .5em;
+	}
+
 }
 
 @media (min-width: 40.25em) { /* 35em "gate" * 1.15 font-size */
@@ -113,6 +112,7 @@ p {
 		line-height: 1.5em;
 	}
 }
+
 
 .article-columns {
 	-webkit-column-width: 40ch;
@@ -169,6 +169,11 @@ main {
 	min-height: calc(100vh - 10em); /* header 4 + footer 6; for positioning footer at bottom of page */
 }
 
+#banner {
+	width: 100%;
+	height: auto;
+}
+
 .main-header {
 	width: 100%;
 	padding: 1em 0;
@@ -193,7 +198,7 @@ main {
 
 .main-section {
 	max-width: 50rem;
-	margin: 0 auto;
+	margin: 2em auto;
 }
 
 @media (max-width: 50rem){
