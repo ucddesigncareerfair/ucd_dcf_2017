@@ -62,21 +62,28 @@ body {
 =================*/
 
 @font-face {
-	font-family: system;
+	font-family: "AvenirNext-Reg";
 	font-style: normal;
 	font-weight: 300;
 	src: url("../fonts/AvenirNextLTPro-Regular.otf");
 }
 
+@font-face {
+	font-family: "AvenirNext-Bold";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/AvenirNextLTPro-Bold.otf");
+}
+
 .body-font,
-body {
-	font-family: "system", sans-serif;
+body, button {
+	font-family: "AvenirNext-Reg", sans-serif;
 }
 
 .header-font,
 h1, h2, h3, h4, h5, h6,
 #logo-text, .header-nav-item{
-	font-family: "system", sans-serif;
+	font-family: "AvenirNext-Bold", "AvenirNext-Reg";
 }
 
 body {
@@ -290,12 +297,13 @@ main {
 
 .header-nav-item, .site-header a {
 	color: currentColor;
-	font-size: 1em;
+	font-size: .8em;
 	line-height: 2em;
 	cursor: pointer;
 	border-bottom: none;
 	margin: 0;
 	padding: 1em;
+	font-family: "AvenirNext-Reg";
 }
 
 .header-nav-item:hover, .site-header a:hover {
@@ -385,11 +393,12 @@ a.header-logo-link {
 
 /*homepage buttons*/
 button {
-	padding: 2em 4em;
+	padding: 1.5em 3em;
 	color: white;
-	margin: 4em 3em;
+	margin: 4em 2em;
 	border: none;
 	border-radius: 20px;
+	font-size: 18px;
 }
 
 .buttonCo {
