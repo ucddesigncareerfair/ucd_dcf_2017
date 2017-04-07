@@ -212,6 +212,26 @@ main {
 	width: 400px;
 }
 
+.teams {
+	display: block;
+	position: relative;
+	width: 800px;
+	height: 300px;
+	margin-top: 4em;
+}
+
+.teams p, .teams h2 {
+	display: inline-block;
+	position: absolute;
+	width: 400px;
+	padding: 0 1em 1em 1em;
+}
+
+.teams p {
+	margin-top: 3em;
+	padding-left: 2em;
+}
+
 /*=================
 	NAVIGATION
 =================*/
