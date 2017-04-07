@@ -239,6 +239,15 @@ main {
 	padding-left: 2em;
 }
 
+.prepare-steps {
+	margin-left: 2em;
+	padding: 1em;
+	font-family: "AvenirNext-Bold";
+}
+
+.prepare-steps ul, .prepare-steps p {
+	font-family: "AvenirNext-Reg";
+}
 /*=================
 	NAVIGATION
 =================*/
