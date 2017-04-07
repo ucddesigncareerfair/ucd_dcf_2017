@@ -65,18 +65,18 @@ body {
 	font-family: system;
 	font-style: normal;
 	font-weight: 300;
-	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Condensed"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+	src: url("../fonts/AvenirNextLTPro-Regular.otf");
 }
 
 .body-font,
 body {
-	font-family: "Nunito", "Ubuntu Condensed", "system", sans-serif;
+	font-family: "system", sans-serif;
 }
 
 .header-font,
 h1, h2, h3, h4, h5, h6,
 #logo-text, .header-nav-item{
-	font-family: "Ubuntu", "system", sans-serif;
+	font-family: "system", sans-serif;
 }
 
 body {
