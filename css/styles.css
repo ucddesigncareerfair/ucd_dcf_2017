@@ -248,6 +248,37 @@ main {
 .prepare-steps ul, .prepare-steps p {
 	font-family: "AvenirNext-Reg";
 }
+
+.company-category {
+	background-color: black;
+	padding: 1em;
+	color: white;
+}
+
+.company-category img, {
+	display: inline-block;
+}
+
+.company-category h3 {
+	display: inline-block;
+	position: relative;
+	padding-left: 1em;
+	font-size: 35px;
+	bottom: 30px;
+}
+
+.bios-section {
+	padding: 2em;
+}
+
+.bios-section p {
+
+}
+
+.logos {
+
+}
+
 /*=================
 	NAVIGATION
 =================*/
