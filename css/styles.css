@@ -271,7 +271,12 @@ main {
 	padding: 2em;
 }
 
-.bios-section p {
+.bios {
+	display: inline-block;
+	padding: 1em;
+}
+
+.bios p {
 
 }
 
