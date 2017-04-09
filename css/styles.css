@@ -470,24 +470,47 @@ a.header-logo-link {
 
 /*homepage buttons*/
 button {
-	padding: 1.5em 3em;
+	padding: 1em 3em;
 	color: white;
 	margin: 4em 2em;
-	border: none;
+	border-style: solid;
+	border-width: thick;
 	border-radius: 20px;
 	font-size: 18px;
+	font-family: "AvenirNext-Bold";
+}
+
+button a {
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: var(--dcf-blue);
+	transition: .5s;
 }
 
 .buttonCo {
+	border-color:  #065398;
 	background-color: #065398;
 }
 
 .buttonStu {
+	border-color:  #ef6565;
 	background-color: #ef6565;
 }
 
 .buttonVol {
+	border-color:  #0cb9a3;
 	background-color: #0cb9a3;
+}
+
+.buttonRsvp {
+	border-color: var(--dcf-yellow);
+	background-color: var(--dcf-yellow);
+	display: block;
+	margin: auto;
 }
 
 /*=================
