@@ -251,13 +251,9 @@ main {
 
 .company-category {
 	padding: 1em;
-	color: black;
+	color: white;
 	display: block;
-	width: 600px;
-	margin: 2em auto;
-	border-width: thick;
-	border-radius: 20px;
-	border-color: white;
+	margin: auto;
 	display: flex;
 	justify-content: center;
 }
@@ -297,6 +293,26 @@ main {
 	margin: auto;
 	display: block;
 	height: 80px;
+}
+
+#viscom {
+	background-color: var(--dcf-red);
+}
+
+#fashion {
+	background-color: var(--dcf-blue);
+}
+
+#industrial {
+	background-color: var(--dcf-green);
+}
+
+#interior {
+	background-color: var(--dcf-red);
+}
+
+#interactive {
+	background-color: var(--dcf-blue);
 }
 
 
