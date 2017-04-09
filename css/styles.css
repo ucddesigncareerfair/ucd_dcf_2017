@@ -251,12 +251,12 @@ main {
 
 .company-category {
 	padding: 1em;
-	color: black;
-	border-style: solid;
-	border-color: white;
-	border-bottom-color: black;
-	border-width: thick;
-	box-sizing: content-box;
+	color: white;
+	max-width: 600px;
+	display: block;
+	margin: auto;
+	display: flex;
+	justify-content: center;
 }
 
 .company-category img, {
@@ -268,7 +268,7 @@ main {
 	position: relative;
 	padding-left: 1em;
 	font-size: 30px;
-	bottom: 20px;
+	top: 20px;
 }
 
 .bios-section {
@@ -296,6 +296,25 @@ main {
 	height: 80px;
 }
 
+#viscom {
+	color: var(--dcf-red);
+}
+
+#fashion {
+	color: var(--dcf-blue);
+}
+
+#industrial {
+	color: var(--dcf-green);
+}
+
+#interior {
+	color: var(--dcf-red);
+}
+
+#interactive {
+	color: var(--dcf-blue);
+}
 
 /*=================
 	NAVIGATION
