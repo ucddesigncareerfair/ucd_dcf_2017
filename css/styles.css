@@ -250,9 +250,13 @@ main {
 }
 
 .company-category {
-	background-color: black;
 	padding: 1em;
-	color: white;
+	color: black;
+	border-style: solid;
+	border-color: white;
+	border-bottom-color: black;
+	border-width: thick;
+	box-sizing: content-box;
 }
 
 .company-category img, {
@@ -263,26 +267,33 @@ main {
 	display: inline-block;
 	position: relative;
 	padding-left: 1em;
-	font-size: 35px;
-	bottom: 30px;
+	font-size: 30px;
+	bottom: 20px;
 }
 
 .bios-section {
 	padding: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .bios {
-	display: inline-block;
 	padding: 1em;
+	width: 250px;
 }
 
-.bios p {
-
+.bios a {
+	border: none;
 }
 
-.logos {
-
+.company-logo {
+	position: relative;
+	margin: auto;
+	display: block;
+	height: 80px;
 }
+
 
 /*=================
 	NAVIGATION
