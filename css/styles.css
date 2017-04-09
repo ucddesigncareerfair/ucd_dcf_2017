@@ -332,7 +332,7 @@ main {
 .site-header {
 	width: 100%;
 	font-size: 1rem;
-	min-height: 4rem;
+	min-height: 3rem;
 	overflow: hidden;
 	text-transform: uppercase;
 }
@@ -345,15 +345,6 @@ main {
 	margin: 0 auto;
 	padding: 0 1rem;
 	max-width: 60rem;
-}
-
-#logo {
-	display: inline-block;
-	height: 2rem;
-}
-
-#logo-text {
-	text-transform: uppercase;
 }
 
 .header-nav-list {
