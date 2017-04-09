@@ -280,7 +280,9 @@ main {
 
 .bios {
 	padding: 1em;
-	width: 250px;
+	width: 300px;
+	border: none;
+	text-align: center;
 }
 
 .bios a {
