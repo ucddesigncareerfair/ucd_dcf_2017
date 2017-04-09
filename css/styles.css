@@ -501,9 +501,17 @@ button:hover {
 	background-color: #ef6565;
 }
 
+.buttonStu:hover {
+	color: #ef6565
+}
+
 .buttonVol {
 	border-color:  #0cb9a3;
 	background-color: #0cb9a3;
+}
+
+.buttonVol:hover {
+	color: #0cb9a3;
 }
 
 .buttonRsvp {
@@ -511,6 +519,10 @@ button:hover {
 	background-color: var(--dcf-yellow);
 	display: block;
 	margin: auto;
+}
+
+.buttonRsvp:hover {
+	color: var(--dcf-yellow);
 }
 
 /*=================
