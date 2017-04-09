@@ -11,10 +11,10 @@ Use "all: initial" to remove inheritance of all styles for an element.
 =================*/
 
 :root {
-	--dcf-red: #F16682; 		--dcf-red-hsl: 348, 83%, 67%; 		--dcf-red-rgb: 241, 102, 130;
-	--dcf-yellow: #F8D863; 		--dcf-yellow-hsl: 47, 91%, 68%; 	--dcf-yellow-rgb: 248, 216, 99;
-	--dcf-green: #09B9A4; 		--dcf-green-hsl: 173, 91%, 38%; 	--dcf-green-rgb: 9, 185, 164;
-	--dcf-blue: #035297; 		--dcf-blue-hsl: 208, 96%, 30%; 		--dcf-blue-rgb: 3, 82, 151;
+	--dcf-red: #EF6565; 		--dcf-red-hsl: 348, 83%, 67%; 		--dcf-red-rgb: 241, 102, 130;
+	--dcf-yellow: #F8D963; 		--dcf-yellow-hsl: 47, 91%, 68%; 	--dcf-yellow-rgb: 248, 216, 99;
+	--dcf-green: #0CB9A3; 		--dcf-green-hsl: 173, 91%, 38%; 	--dcf-green-rgb: 9, 185, 164;
+	--dcf-blue: #065398; 		--dcf-blue-hsl: 208, 96%, 30%; 		--dcf-blue-rgb: 3, 82, 151;
 }
 
 html {
@@ -251,15 +251,18 @@ main {
 
 .company-category {
 	padding: 1em;
-	color: white;
-	max-width: 600px;
+	color: black;
 	display: block;
-	margin: auto;
+	width: 600px;
+	margin: 2em auto;
+	border-width: thick;
+	border-radius: 20px;
+	border-color: white;
 	display: flex;
 	justify-content: center;
 }
 
-.company-category img, {
+.company-category img {
 	display: inline-block;
 }
 
@@ -296,25 +299,6 @@ main {
 	height: 80px;
 }
 
-#viscom {
-	color: var(--dcf-red);
-}
-
-#fashion {
-	color: var(--dcf-blue);
-}
-
-#industrial {
-	color: var(--dcf-green);
-}
-
-#interior {
-	color: var(--dcf-red);
-}
-
-#interactive {
-	color: var(--dcf-blue);
-}
 
 /*=================
 	NAVIGATION
