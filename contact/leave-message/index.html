@@ -11,7 +11,7 @@
 <link rel="canonical" href="https://ucddesigncareerfair.com/">
 <link rel="alternate" type="application/rss+xml" title="UC Davis Design Career Fair 2016" href="http://ucddesigncareerfair.com/feed.xml">
 
-<link type="text/css" rel="stylesheet" href="../../css/styles.css" />
+<link type="text/css" rel="stylesheet" href="../css/styles.css" />
 
 <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role-->
 <script type="text/javascript">
@@ -33,7 +33,7 @@
 
 <style type="text/css">
 	.page-bgcolor {
-		background-color: #035297;
+		background-color: #F8D863;
 	}
 </style>
 
@@ -79,8 +79,8 @@
 <header class="site-header" role="banner">
 	<div class="header-wrapper">
 
-		<a href="../../index.html">
-			<img src="../../img/logo_black.png" alt="The Design Career Fair logo, links to homepage" width="200px"/>
+		<a href="../index.html">
+			<img src="../img/logo_black.png" alt="The Design Career Fair logo, links to homepage" width="200px"/>
 		</a>
 
     <nav class="header-nav" role="menubar">
@@ -111,7 +111,10 @@
 					</ul>
 				</li>
 				<li class="header-nav-list-item menubar-nav-header" role="button" tabindex="0" aria-haspopup="true" aria-controls="dropdown-contact" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)">
-					<span class="header-nav-item dropdown-icon"><a href="/contact">Contact</a></span>
+					<span class="header-nav-item dropdown-icon">Contact</span>
+					<ul id="dropdown-contact" class="dropdown-list" role="group">
+						<li class="menubar-nav-link"><a href="#0" role="navigation">E-Mail</a></li>
+					</ul>
 				</li>
 			</ul>
 		</nav>
@@ -149,7 +152,7 @@
 				<li class="menu-nav-link"><a href="/employers/prepare" role="navigation">Prepare</a></li>
 			</ul>
 			<hr>
-				<!-- <li class="menu-nav-link"><a href="/calendar" role="navigation">Calendar</a></li> -->
+				<li class="menu-nav-link"><a href="/calendar" role="navigation">Calendar</a></li>
 				<li class="menu-nav-link"><a href="#0" role="navigation">Contact</a></li>
 		</ul>
 	</nav>
@@ -159,30 +162,41 @@
 <main>
 	<header class="main-header page-bgcolor" id="main-header-PAGE">
 		<div class="main-header-wrapper">
-			<h1 class="main-header-title header-font">Get Involved</h1>
+			<h1 class="main-header-title header-font">Student Resources</h1>
 		</div>
 	</header>
 
 	<section class="main-section">
 
-		<p>There's a number of ways to get involved with the fair and Design Careers Club this year! Here are a few ways
-		you can make a big difference for a small club!</p>
-
-		<h2>Participate in the Career Fair</h2>
-		<p>If your company has a couple of representatives that wouldn't mind coming out to the event, your company could
-		play a big role in making our career fair successful!
-		<br>
-		Reserving a table is free and there are still spots available until April 20th! All you need to do is contact us
-		via email. You can also reserve by visiting the "Contact" tab and sending us a message. We are keeping a sharp eye
-		for new companies taking interest, so you can expect to hear back from us shortly!</p>
-
-		<button><a href="../../contact">Reserve</a></button>
-
-		<h2>Donate</h2>
-		<p></p>
-
-		<h2>Hold a workshop/lecture</h2>
-		<p></p>
+	<h2>Leave us a message</h2>
+  <p>You can also email us at <a href="mailto:ucddesigncareerfair@gmail.com">ucddesigncareerfair@gmail.com</a></p>
+  <div class="contact-form">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeZ6BkD98C5ClAYnY5LeOpbvE0l0vQGsFRDmpd1XZqwJSlYDQ/viewform?c=0&w=1/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+          <div class="form-group">
+              <label for="entry_438390567">Name/Company*</label>
+              <input type="text" name="entry.438390567" value="" class="form-control" id="entry_438390567">
+          </div>
+          <div class="form-group">
+              <label for="entry_305107312">Email*</label>
+              <input type="text" name="entry.305107312" value="" class="form-control" id="entry_305107312">
+          </div>
+					<div class="form-group">
+              <label for="entry_1445963088">I would like to...</label>
+              <input type="checkbox" name="entry.1445963088" value="" class="form-control" id="entry_1445963088">Reserve a table at DCF for my company
+							<input type="checkbox" name="entry.1445963088" value="" class="form-control" id="entry_1445963088">Donate to Design Careers Club
+							<input type="checkbox" name="entry.1445963088" value="" class="form-control" id="entry_1445963088">Donate freebies from my company to DCF
+					</div>
+          <div class="form-group">
+              <label for="entry_15567033">Message*</label>
+              <textarea name="entry.15567033"class="form-control" id="entry_15567033"></textarea>
+          </div>
+          <input type="hidden" name="draftResponse" value="[,,&quot;-2950154668563215568&quot;]">
+          <input type="hidden" name="pageHistory" value="0">
+          <input type="hidden" name="fvv" value="0">
+          <input type="hidden" name="fbzx" value="-2950154668563215568">
+          <input class="btn btn-cyan" type="submit" value="SUBMIT">
+      </form>
+  </div>
 
 	</section>
 </main>
