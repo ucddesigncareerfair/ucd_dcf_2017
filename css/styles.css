@@ -315,6 +315,25 @@ main {
 	background-color: var(--dcf-blue);
 }
 
+label {
+	font-family: "AvenirNext-Bold";
+}
+
+label, input, textarea {
+	margin: 1em;
+	border-radius: 10px;
+}
+
+input, textarea {
+	padding: .5em;
+}
+
+textarea {
+	width: 400px;
+	height: 200px;
+}
+
+
 
 /*=================
 	NAVIGATION
@@ -515,6 +534,28 @@ button:hover {
 
 .buttonRsvp:hover {
 	color: var(--dcf-yellow);
+}
+
+.reserve-donate {
+	border-color: var(--dcf-blue);
+	background-color: var(--dcf-blue);
+	display: block;
+	margin: auto;
+}
+
+.reserve-donate:hover {
+	color: var(--dcf-blue);
+}
+
+.submit-btn {
+	border-color: var(--dcf-blue);
+	background-color: var(--dcf-blue);
+	display: block;
+	margin: auto;
+}
+
+.submit-btn {
+	color: var(--dcf-blue);
 }
 
 /*=================
