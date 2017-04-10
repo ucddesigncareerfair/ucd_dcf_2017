@@ -323,6 +323,7 @@ main {
 .site-header, .dropdown-list, .menu-nav-list {
 /* controls navigation theme color, can be dropped in to html <style> for per-page variations */
 	background-color: hsl(0, 0%, 95%);
+	z-index: 1;
 }
 
 .menu-nav-list::before {
