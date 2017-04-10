@@ -551,11 +551,13 @@ button:hover {
 	border-color: var(--dcf-blue);
 	background-color: var(--dcf-blue);
 	display: block;
-	margin: auto;
+	color: white;
+	padding: 1em 2em;
+	font-family: "AvenirNext-Bold";
 }
 
-.submit-btn {
-	color: var(--dcf-blue);
+.submit-btn:hover {
+	cursor: pointer;
 }
 
 /*=================
