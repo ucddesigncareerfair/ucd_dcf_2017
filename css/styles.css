@@ -560,6 +560,19 @@ button:hover {
 	cursor: pointer;
 }
 
+.buttonVol2 {
+	border-color: var(--dcf-yellow);
+	background-color: var(--dcf-yellow);
+	display: inline-block;
+	margin: 1em 3em;
+}
+
+.buttonVol2:hover {
+	cursor: pointer;
+	color: var(--dcf-yellow);
+
+}
+
 /*=================
 	MENU
 =================*/
