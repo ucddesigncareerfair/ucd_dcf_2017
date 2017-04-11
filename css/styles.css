@@ -169,7 +169,8 @@ hr {
 =================*/
 
 main {
-	min-height: calc(100vh - 10em); /* header 4 + footer 6; for positioning footer at bottom of page */
+	/*min-height: calc(100vh - 10em); /* header 4 + footer 6; for positioning footer at bottom of page */
+
 }
 
 #banner {
@@ -202,6 +203,9 @@ main {
 .main-section {
 	max-width: 50rem;
 	margin: 2em auto;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
 
 @media (max-width: 50rem){
@@ -338,7 +342,10 @@ textarea {
 	height: 200px;
 }
 
-
+#donate-page, #message-page {
+	background-color: var(--dcf-blue);
+	color: white;
+}
 
 /*=================
 	NAVIGATION
