@@ -245,6 +245,15 @@ main {
 	font-family: "AvenirNext-Reg";
 }
 
+.prepare-steps p {
+	position: relative;
+	left: -20px;
+}
+
+.prepare-sub-steps li {
+	text-indent: 20px;
+}
+
 .company-category {
 	padding: 1em;
 	color: white;
