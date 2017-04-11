@@ -501,22 +501,24 @@ button, .button_index {
 	text-decoration: none;
 	flex-grow: 1;
 	text-align: center;
+	transition: color 0.1s linear, background-color 0.1s linear;
+}
+
+.button_index:hover {
+	background-color: transparent;
 }
 
 button a {
 	border: none;
 }
 
-button:hover {
-	cursor: pointer;
-	background-color: white;
-	color: var(--dcf-blue);
-	transition: .5s;
-}
-
 .button_company {
 	border-color:  #065398;
 	background-color: #065398;
+}
+
+.button_company:hover {
+	color:  #065398;
 }
 
 .button_student {
@@ -535,6 +537,15 @@ button:hover {
 
 .button_support:hover {
 	color: #0cb9a3;
+}
+
+.button_rsvp {
+	border-color:  var(--dcf-yellow);
+	background-color: var(--dcf-yellow);
+}
+
+.button_rsvp:hover {
+	color: var(--dcf-yellow);
 }
 
 .buttonRsvp {
