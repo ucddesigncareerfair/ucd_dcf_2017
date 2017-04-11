@@ -132,21 +132,17 @@ p {
 	margin: 0 auto;
 }
 
-a {
+a[href]:not([class]) {
 	color: currentColor;
 	text-decoration: none;
-	border-bottom: 0.1em solid var(--dcf-blue);
-	border-radius: 0.2em 0.2em 0 0;
-	padding: 0.1em 0.2em 0;
-	margin: -0.1em -0.2em 0;
 	transition: background-color 0.2s;
 }
 
-a:hover {
+a[href]:not([class]):hover {
 	background-color: hsla(var(--dcf-blue-hsl), 0.1);
 }
 
-a:active {
+a[href]:not([class]):active {
 	background-color: hsla(var(--dcf-blue-hsl), 0.3);
 	transition-duration: 0s;
 }
@@ -352,7 +348,6 @@ textarea {
 .site-header {
 	width: 100%;
 	font-size: 1rem;
-	min-height: 3rem;
 	overflow: hidden;
 	text-transform: uppercase;
 }
@@ -362,6 +357,7 @@ textarea {
 	justify-content: space-between;
 	flex-flow: row wrap;
 	align-items: center;
+	min-height: 5rem;
 	margin: 0 auto;
 	padding: 0 1rem;
 	max-width: 60rem;
@@ -480,15 +476,31 @@ a.header-logo-link {
 }
 
 /*homepage buttons*/
-button {
+
+.index-category h2 {
+	text-align: center;
+}
+
+.index-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 3em 0;
+}
+
+button, .button_index {
 	padding: 1em 3em;
+	margin: 1em;
 	color: white;
-	margin: 4em 2em;
 	border-style: solid;
 	border-width: thick;
 	border-radius: 20px;
 	font-size: 18px;
 	font-family: "AvenirNext-Bold";
+	text-decoration: none;
+	flex-grow: 1;
+	text-align: center;
 }
 
 button a {
@@ -502,26 +514,26 @@ button:hover {
 	transition: .5s;
 }
 
-.buttonCo {
+.button_company {
 	border-color:  #065398;
 	background-color: #065398;
 }
 
-.buttonStu {
+.button_student {
 	border-color:  #ef6565;
 	background-color: #ef6565;
 }
 
-.buttonStu:hover {
+.button_student:hover {
 	color: #ef6565
 }
 
-.buttonVol {
+.button_support {
 	border-color:  #0cb9a3;
 	background-color: #0cb9a3;
 }
 
-.buttonVol:hover {
+.button_support:hover {
 	color: #0cb9a3;
 }
 

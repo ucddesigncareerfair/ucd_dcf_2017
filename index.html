@@ -9,16 +9,9 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://ucddesigncareerfair.com/">
-<link rel="alternate" type="application/rss+xml" title="UC Davis Design Career Fair 2016" href="http://ucddesigncareerfair.com/feed.xml">
 
 <link type="text/css" rel="stylesheet" href="css/styles.css" />
 
-
-<script type="text/javascript">
-  var host = "ucddesigncareerfair.com";
-  if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
-</script>
 <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role-->
 <script type="text/javascript">
 	function handleBtnClick(event) {
@@ -81,14 +74,11 @@
 
 <body>
 
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!%22%23%24%25%26%27()*%2B%2C-.%2F0123456789%3A%3B%3C%3D%3E%3F%40%5B%5C%5D%5E_%60%7B%7C%7D~" rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Nunito&amp;text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!%22%23%24%25%26%27()*%2B%2C-.%2F0123456789%3A%3B%3C%3D%3E%3F%40%5B%5C%5D%5E_%60%7B%7C%7D~" rel="stylesheet">
-
 <header class="site-header" role="banner">
 
 	<div class="header-wrapper">
 
-    <a href="index.html">
+    <a href="index.html" class="header-logo">
       <img src="img/logo_black.png" alt="The Design Career Fair logo, links to homepage" width="200px"/>
     </a>
 
@@ -149,19 +139,19 @@
 			<ul class="menu-nav-list-sub">
 				<li class="menu-nav-link"><a href="/students/company-bios" role="navigation">Company Bios</a></li>
 				<li class="menu-nav-link"><a href="/students/rsvp" role="navigation">RSVP</a></li>
-				<li class="menu-nav-link"><a href="/students/prepare" role="navigation">Prepare</a></li>
 				<li class="menu-nav-link"><a href="/students/volunteer" role="navigation">Volunteer</a></li>
 			</ul>
 			<li class="menu-nav-header" role="heading">Employers</li>
 			<ul class="menu-nav-list-sub">
 				<li class="menu-nav-link"><a href="/employers/benefits" role="navigation">Benefits</a></li>
 				<li class="menu-nav-link"><a href="/employers/get-involved" role="navigation">Get Involved</a></li>
-				<li class="menu-nav-link"><a href="/employers/rsvp" role="navigation">RSVP</a></li>
 				<li class="menu-nav-link"><a href="/employers/prepare" role="navigation">Prepare</a></li>
 			</ul>
-			<hr>
-				<!-- <li class="menu-nav-link"><a href="/calendar" role="navigation">Calendar</a></li> -->
-				<li class="menu-nav-link"><a href="#0" role="navigation">Contact</a></li>
+			<li class="menu-nav-header" role="heading">Contact</li>
+			<ul class="menu-nav-list-sub">
+				<li class="menu-nav-link"><a href="/contact/leave-message" role="navigation">Message</a></li>
+				<li class="menu-nav-link"><a href="/contact/reserve-donate" role="navigation">Donate</a></li>
+			</ul>
 		</ul>
 	</nav>
 </aside>
@@ -172,24 +162,29 @@
   <img id="banner" src="img/banner.jpg" alt="DCF takes place April 28th from 11 to 3 in the ARC Ballroom at UC Davis"/>
 
 	<section class="main-section">
-
-    <h2>I'm a company looking for students to hire...<h2>
-      <button class="buttonCo"><a href="employers/benefits">Benefits</a></button>
-      <button class="buttonCo"><a href="employers/get-involved">Get Involved</a></button>
-      <button class="buttonCo"><a href="employers/prepare">Prepare</a></button>
-      <br><br>
-
-    <h2>I'm a student looking for future plans...<h2>
-      <button class="buttonStu"><a href="students/company-bios">Companies</a></button>
-      <button class="buttonStu"><a href="students/rsvp">RSVP</a></button>
-      <button class="buttonStu"><a href="students/prepare">Prepare</a></button>
-      <br><br>
-
-    <h2>I want to support the Design Career Fair...<h2>
-      <button class="buttonVol"><a href="employers/reserve-donate">As a Sponsor</a></button>
-      <button class="buttonVol"><a href="students/volunteer">As a Volunteer</a></button>
-      <br><br>
-
+		<section class="index-category">
+			<h2>I'm a company looking for students to hire...<h2>
+			<div class="index-group">
+				<a class="button_index button_company" href="employers/benefits">Benefits</a>
+				<a class="button_index button_company" href="employers/get-involved">Get Involved</a></button>
+				<a class="button_index button_company" href="employers/prepare">Prepare</a></button>
+			</div>
+			</section>
+		<section class="index-category">
+			<h2>I'm a student looking for future plans...<h2>
+			<div class="index-group">
+				<a class="button_index button_student" href="students/company-bios">Companies</a></button>
+				<a class="button_index button_student" href="students/rsvp">RSVP</a></button>
+				<a class="button_index button_student" href="students/prepare">Prepare</a></button>
+			</div>
+		</section>
+		<section class="index-category">
+			<h2>I want to support the Design Career Fair...<h2>
+			<div class="index-group">
+				<a class="button_index button_support" href="employers/reserve-donate">As a Sponsor</a></button>
+				<a class="button_index button_support" href="students/volunteer">As a Volunteer</a></button>
+			</div>
+		</section>
 	</section>
 </main>
 
