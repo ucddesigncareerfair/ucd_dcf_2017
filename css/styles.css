@@ -605,11 +605,6 @@ button a {
 	margin: 1em 3em;
 }
 
-.buttonVol2:hover {
-	cursor: pointer;
-	color: var(--dcf-yellow);
-
-}
 
 /*=================
 	MENU
