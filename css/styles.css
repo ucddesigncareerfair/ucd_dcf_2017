@@ -202,7 +202,7 @@ main {
 
 .main-section {
 	max-width: 50rem;
-	margin: 2em auto;
+	margin: 2em auto 0 auto;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -331,6 +331,7 @@ label {
 label, input, textarea {
 	margin: 1em;
 	border-radius: 10px;
+	border-color: transparent;
 }
 
 input, textarea {
@@ -587,10 +588,8 @@ button a {
 }
 
 .submit-btn {
-	border-color: var(--dcf-blue);
-	background-color: var(--dcf-blue);
 	display: block;
-	color: white;
+	color: var(--dcf-blue);
 	padding: 1em 2em;
 	font-family: "AvenirNext-Bold";
 }
