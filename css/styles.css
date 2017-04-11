@@ -297,6 +297,14 @@ main {
 	border: none;
 }
 
+.bios p {
+	padding: 0;
+}
+
+.bios h4 {
+	padding: 15px;
+}
+
 .company-logo {
 	position: relative;
 	margin: auto;
