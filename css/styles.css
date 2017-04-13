@@ -170,7 +170,7 @@ hr {
 =================*/
 
 main {
-	/*min-height: calc(100vh - 10em); /* header 4 + footer 6; for positioning footer at bottom of page */
+	min-height: calc(100vh - 10em); /* header 4 + footer 6; for positioning footer at bottom of page */
 
 }
 
@@ -386,7 +386,7 @@ textarea {
 	justify-content: space-between;
 	flex-flow: row wrap;
 	align-items: center;
-	min-height: 5rem;
+	min-height: 4rem;
 	margin: 0 auto;
 	padding: 0 1rem;
 	max-width: 60rem;
