@@ -314,7 +314,9 @@ main {
 }
 
 .company-logo-big {
-	margin: auto 0;	
+	margin: auto;
+	display: block;
+	position: relative;
 }
 
 #viscom {
