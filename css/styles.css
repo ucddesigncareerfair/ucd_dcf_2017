@@ -313,6 +313,10 @@ main {
 	height: 80px;
 }
 
+.company-logo-big {
+	margin: auto 0;	
+}
+
 #viscom {
 	background-color: var(--dcf-red);
 }
